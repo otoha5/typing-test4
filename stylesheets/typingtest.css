@@ -1,0 +1,92 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100dvh;
+  background-image: url(../images/background-image.png);
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+[data-screen="game"] {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+
+
+.timer {
+  font-size: 75px;
+  font-weight: bold;
+  width: 360px;
+  height: 120px;
+  line-height: 120px;
+  color: #000000;
+  text-align: right;
+}
+
+.game-body {
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+}
+
+.game-body .typing {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.game-body .typing .arrow_box {
+  font-size: 50px;
+  background: #2fc0b4;
+  padding: 10px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  text-shadow: 0px 0px 0px #000000;
+  position: relative;
+}
+
+.game-body .typing .arrow_box::after {
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  position: absolute;
+  border-color: rgba(0, 153, 255, 0);
+  border-top-width: 19px;
+  border-bottom-width: 19px;
+  border-left-width: 53px;
+  border-right-width: 53px;
+  margin-top: -19px;
+  border-left-color: #2fc0b4;
+  left: 100%;
+  top: 38%;
+}
+
+
+
+.game-body .zundamon {
+  width: 20%;
+}
+
+.game-body .zundamon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
