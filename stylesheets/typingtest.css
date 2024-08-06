@@ -21,11 +21,14 @@ body {
 }
 
 
+.game-header{
+  
+}
 
 .timer {
   font-size: 75px;
   font-weight: bold;
-  width: 360px;
+  width: 1000px;
   height: 120px;
   line-height: 120px;
   color: #000000;
@@ -40,7 +43,8 @@ body {
 
 .game-body .typing {
   flex-grow: 1;
-  display: flex;
+  position: relative;
+  top: 50px;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -71,10 +75,10 @@ body {
   border-bottom-width: 19px;
   border-left-width: 53px;
   border-right-width: 53px;
-  margin-top: -19px;
+  margin-top: -18px;
   border-left-color: #2fc0b4;
   left: 100%;
-  top: 38%;
+  top: 60%;
 }
 
 
@@ -88,5 +92,3 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
-
